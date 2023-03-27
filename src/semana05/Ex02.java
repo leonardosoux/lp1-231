@@ -13,6 +13,7 @@ public class Ex02 {
         float peso = sc.nextFloat();
 
         float imc = (peso / (altura * altura));
+        System.out.println("Seu IMC é: " + imc);
         
         if (imc < 18.5){
             System.out.println("Peso baixo");
@@ -34,5 +35,16 @@ public class Ex02 {
         else if (imc >= 40){
             System.out.println("Obesidade Classe 3");
         } 
-    }   
+        
+        double pesoIdeal = 24.9 * (altura * altura);
+        double pesoAPerder = peso - pesoIdeal;
+
+        System.out.println("Você precisa perder " + pesoAPerder + "Kg");
+        
+
+        sc.close();
+    }
 }
+        
+     
+
