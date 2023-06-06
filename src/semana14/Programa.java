@@ -1,8 +1,10 @@
-package semana12;
+package semana14;
 
 public class Programa {
     public static void main(String[] args) {
         Quadrado quadrado = new Quadrado(10.0);
+        // quadrado.lado = 0.0;
+        quadrado.setLado(-10);
 
         System.out.println(quadrado.calcularArea());
 
