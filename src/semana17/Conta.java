@@ -7,12 +7,21 @@ public class Conta {
     private LocalDate dataAbertura;
     protected double saldo;
     protected double tarifa;
-    private String correntista;
+   
     
 
-    public Conta(int numero, String correntista) {
+    public Conta(int numero, LocalDate dataAbertura, double saldo, double tarifa) {
         this.numero = numero;
-        this.correntista = correntista;
+        this.dataAbertura = LocalDate.now();
+        this.saldo = saldo;
+        this.tarifa = tarifa;
+    }
+
+    public Conta(int numero, LocalDate dataAbertura) {
+        this.numero = numero;
+        this.dataAbertura = LocalDate.now();
+        this.saldo = 0.0;
+        this.tarifa = 0.0;
     }
 
     public void sacar(double valor) {
