@@ -13,7 +13,7 @@ public class Prova {
     }
 
     public void adicionarQuestao(Questao questao) {
-    questoes.add(questao);
+    this.questoes.add(questao);
     pontuacaoTotal++;
     }
     
